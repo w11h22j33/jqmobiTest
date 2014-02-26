@@ -10,8 +10,9 @@
 <script src="ui/appframework.ui.js" type="text/javascript"></script>  
 </head>
 <body>
-    <div id="afui">  
-        <div id="content">  
+    <div id="afui">
+        <div id="content">
+        <!-- 第一个标签显示的 -->
             <div id="home" title="首页" class="panel" selected="true"  
                 data-footer="custom_footer">  
               <ul class="list">
@@ -23,23 +24,6 @@
     			<li>Test2</li>
     			<li>Test1</li>
     			<li>Test2</li>
-    			<li>Test1</li>
-    			<li>Test2</li>
-    			<li>Test1</li>
-    			<li>Test2</li>
-    			<li>Test1</li>
-    			<li>Test2</li>
-    			<li>Test1</li>
-    			<li>Test2</li>
-    			<li>Test1</li>
-    			<li>Test2</li>
-    			<li>Test1</li>
-    			<li>Test2</li>
-    			<li>Test1</li>
-    			<li>Test2</li>
-    			<li>Test1</li>
-    			<li>Test2</li>
-    			<li>Test1</li>
     			<li>Test2</li>
     			<li>Test1</li>
     			<li>Test2</li>
@@ -52,7 +36,24 @@
                 <a class="button">Home</a>
 				<span class="button">Home</span>
 				<div class="button">Home</div>  
-            </div> 
+            </div>
+            <div id="about" title="关于我们" class="panel"  
+                data-footer="custom_footer">  
+                <a class="button">Home</a>
+				<span class="button">Home</span>
+				<div class="button">Home</div>  
+            </div>
+            <div id="other" title="其他内容" class="panel"  
+                data-footer="custom_footer">  
+                <a class="button">Home</a>
+				<span class="button">Home</span>
+				<div id="www" class="button">Home</div>  
+				<script>
+$("#www").bind("click",function(){
+    alert("I was clicked");
+});
+    </script>
+            </div>
             <header id="custom_header">  
                 <h2>首页</h2>
             </header> 
@@ -60,8 +61,11 @@
             <footer id="custom_footer">  
                 <a href='#home' class='icon home'>首页</a>  
                 <a href='#about' class='icon info'>关于我们</a>
+                <a href='#other' class='icon info'>其他内容</a>
+                    
             </footer>  
         </div>  
-    </div>  
+    </div>
+
 </body>  
 </html>
